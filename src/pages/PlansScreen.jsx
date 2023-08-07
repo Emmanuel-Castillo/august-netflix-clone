@@ -5,7 +5,6 @@ import {
   addDoc,
   collection,
   doc,
-  getDoc,
   getDocs,
   onSnapshot,
   query,
@@ -41,8 +40,6 @@ function PlansScreen() {
     }
     getQuerySnap()
   },[user.uid])
-
-  console.log(subscription)
 
   useEffect(() => {
     async function getDocSnap() {
